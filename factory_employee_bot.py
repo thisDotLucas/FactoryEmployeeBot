@@ -78,11 +78,11 @@ def get_today_date():
 def set_time(prev_time):
     
     if(int(prev_time[:2]) < 13):
-        return format_time(int(prev_time[:2]) + random.randint(1, 3)) + ":" + format_time(random.randint(0, 59))
+        return format_time(int(prev_time[:2]) + random.randint(1, 3)) + ":" + format_time(random.randint(0, 59)) + ":" + format_time(random.randint(0, 59))
     elif (int(prev_time[:2]) == 13):
-        return format_time(int(prev_time[:2]) + 1) + ":" + format_time(random.randint(0, 59))
+        return format_time(int(prev_time[:2]) + 1) + ":" + format_time(random.randint(0, 59)) + ":" + format_time(random.randint(0, 59))
     else:
-        return format_time(int(prev_time[:2]) + 1) + ":" + format_time(random.randint(0, 15))
+        return format_time(int(prev_time[:2]) + 1) + ":" + format_time(random.randint(0, 15)) + ":" + format_time(random.randint(0, 59))
 
 #Formats time in the form of x to 0x
 def format_time(minute):
