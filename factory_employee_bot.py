@@ -9,9 +9,9 @@ def main():
       
     #Connection
     mydb = mysql.connector.connect(
-        host = "factorymanager.cnkiejckzy7g.us-east-2.rds.amazonaws.com",
+        host = "*****",
         user = "root",
-        passwd = "038913641249",
+        passwd = "*****",
         database = "sql_factory"
         )
 
