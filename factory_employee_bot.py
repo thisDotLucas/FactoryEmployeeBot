@@ -10,9 +10,9 @@ def main():
     #Connection
     mydb = mysql.connector.connect(
         host = "*****",
-        user = "root",
+        user = "*****",
         passwd = "*****",
-        database = "sql_factory"
+        database = "*****"
         )
 
     #Gets the employee table from the database.
